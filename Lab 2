@@ -5,21 +5,20 @@ students = [
 ]
 
 def add():
-    name = input("Enter name: ")              # string
-    course = input("Enter course: ")          # string
-    age = int(input("Enter age: "))           # integer
+    name = input("Enter name: ")              
+    course = input("Enter course: ")          
+    age = int(input("Enter age: "))           
 
     student = {
-        "info": (name, course),               # tuple
-        "age": age                            # integer
+        "info": (name, course),               
+        "age": age                            
     }
 
     students.append(student)
     print("Student added!\n")
 
 def view():
-    # print("DEBUG:", students)  # Remove or comment out
-
+    
     if not students:
         print("No students found.\n")
         return
